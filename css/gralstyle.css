@@ -1,0 +1,46 @@
+:root {
+    --color-gral : crimson;
+}
+
+body {
+    font-family: Candara, sans-serif;
+    font-size: x-large;
+    line-height: 1.5em;
+    text-align: justify;
+    hyphens: auto;
+    width: 60vw;
+    margin: auto;
+
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: "Candara Light", sans-serif;
+        font-size: 1.5em;
+        padding-left: 8px;
+        border-left: var(--color-gral) 3px solid;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    strong {
+        font-variant: small-caps;
+        color: var(--color-gral);
+    }
+}
+
+#main {
+    div {
+        margin: 3em 0;
+    }
+}
+
+#datatype {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-auto-rows: auto;
+}
