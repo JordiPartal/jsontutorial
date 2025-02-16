@@ -1,0 +1,40 @@
+{
+  "name": [
+    "Jorge",
+    "Jaime",
+    "Luz",
+    "Ainoa",
+    "Beatriz",
+    "Ramón",
+    "David",
+    "Néstor",
+    "Marta",
+    "Khalid"
+  ],
+  "apellido": {
+    "primero": [
+      "Martínez",
+      "Partal",
+      "Hernández",
+      "Campanilla",
+      "Otero",
+      "Alcázar",
+      "Santiago",
+      "García",
+      "Pérez",
+      "Sánchez"
+    ],
+    "segundo": [
+      "Gonzalez",
+      "Torres",
+      "Romero",
+      "Sosa",
+      "Soriano",
+      "Lopez",
+      "Díaz",
+      "Gomez",
+      "Rodriguez",
+      "Fernandez"
+    ]
+  }
+}

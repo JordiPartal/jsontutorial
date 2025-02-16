@@ -1,76 +1,64 @@
-let content;
+let dataset, employees;
 
-async function onLoad() {
+async function init() {
     try {
-        await getJsonData();
-        addItem("body", "div");
-        setId("body", 2, "main");
-
-        addItems(isId("main"), 5, "div");
-        setId(isId("main"), 0, "intro");
-        setId(isId("main"), 1, "structure");
-
-        addItem(isId("intro"), "h2");
-        addItem(isId("intro"), "p");
-        addTxtInto(isId("intro"), 0, "Introducción");
-        addTxtInto(isId("intro"), 1, content.introduction);
-
-        addItem(isId("structure"), "h2");
-        addItem(isId("structure"), "p");
-        addItem(isId("structure"), "div");
-        addTxtInto(isId("structure"), 0, "Tipos de datos");
-        addTxtInto(isId("structure"), 1, content.datatype);
-
-        setId(isId("structure"), 2, "datatype");
-
+        await getData("gen.json");
+        addABunchOfEmployees(20);
     } catch (e) {
         console.log(e.message);
     }
 }
 
-function getJsonData() {
-    return fetch("./js/json/contenido.json")
+function getData(file) {
+    return fetch(rootFile(file))
         .then(response => response.json())
-        .then(json => {
-            content = json;
+        .then(data => {
+            dataset = data;
         })
-        .catch(error =>{
-            console.log(error.message);
-        });
+        .catch(error => {
+            console.log(error);
+        })
 }
 
-function addItems(domItemParent, max, domItemChild) {
+function addABunchOfEmployees(max) {
+
+    let collection = [];
     for (let count = 0; count < max; count++) {
-        addItem(domItemParent, domItemChild);
+        collection[count] = addEmployee(dataset);
     }
+    employees = new Employees().setEmployees(collection).build();
 }
 
-function addItem(domItemParent, domItemChild) {
-    let parent = getItemNode(domItemParent);
-    let inside = document.createElement(domItemChild);
-    parent.appendChild(inside);
+function addEmployee(data) {
+    let surnames = new Employees.Surnames()
+        .setSurname(dataGen(data.apellido.primero))
+        .setLastName(dataGen(data.apellido.segundo)).build();
+
+    return new Employees.Employee()
+        .setName(dataGen(data.name))
+        .setSurname(surnames)
+        .setAge(getNumberBetween(20, 40))
+        .setSingle(getBooleanValue()).build();
 }
 
-function addTxtInto(domItemParent, child, txt) {
-    getItemNode(domItemParent).children.item(child).innerHTML = txt;
+function dataGen(data) {
+    let position = randomize(data);
+    return data[position];
 }
 
-function getItemNode(domItem) {
-    return document.querySelector(domItem);
+function randomize(data) {
+    return Math.round(Math.random() * (data.length - 1));
 }
 
-function setId(domItem, child, identifier) {
-    getItemNode(domItem).children.item(child).setAttribute('id', identifier);
+function getNumberBetween(min, max) {
+    return Math.round(Math.random() * (max - min) + min);
 }
 
-function setClass(domItem, child, identifier) {
-    getItemNode(domItem).children.item(child).setAttribute('class', identifier);
+function getBooleanValue() {
+    let boolean = [ true, false ];
+    return boolean[Math.round(Math.random())];
 }
 
-function isId(domItem) {
-    return "#".concat(domItem);
-}
-
-function isClass(domItem) {
-    return ".".concat(domItem);
+function rootFile(file) {
+    return "./js/json/".concat(file);
 }

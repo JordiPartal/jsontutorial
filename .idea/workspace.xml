@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c0511d-d180-4d40-a6c4-426703819bd9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/js/builder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/json/contenido.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/employees.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/json/gen.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/tuto01.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/gralstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/gralstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/builder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/builder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/json/contenido.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +50,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "dev",
+    "javascript.nodejs.core.library.configured.version": "20.9.0",
+    "javascript.nodejs.core.library.typings.version": "20.9.5",
     "last_opened_file_path": "G:/DAW/DriverJS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -54,9 +59,15 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "E:\\PhpStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\DAW\JsonTutorial\media" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -77,7 +88,9 @@
       <workItem from="1739616262419" duration="148000" />
       <workItem from="1739616512859" duration="8000" />
       <workItem from="1739616576208" duration="294000" />
-      <workItem from="1739631405859" duration="22737000" />
+      <workItem from="1739631405859" duration="23395000" />
+      <workItem from="1739697486286" duration="8431000" />
+      <workItem from="1739715044470" duration="9808000" />
     </task>
     <servers />
   </component>

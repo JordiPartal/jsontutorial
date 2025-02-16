@@ -6,9 +6,39 @@
   <script src="//unpkg.com/brain.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="js/builder.js"></script>
+  <script src="js/employees.js"></script>
   <title>Title</title>
 </head>
-<body onload="onLoad()">
-  <h1>JSON y JavaScript</h1>
+<body onload="init()">
+  <main>
+    <h1>JSON y JavaScript</h1>
+    <div>
+      <h2>Introducción</h2>
+      <p>
+        En este sitio web, hablaremos de los fichero de tipo JSON. El acrónimo de JSON (JavaScript Object Notation), a grandes rasgos, es un formato de texto sencillo y ligero que nos permite intercambiar datos de manera más eficaz. Este tipo de ficheros, de manera vulgar se considera que son una array, pero eso es una blasfemia. <strong>Los ficheros JSON son una representación sencilla de lo que entendemos cómo un objeto</strong>. Además, no pesa demasiado y carece de claves primarias y foráneas.
+      </p>
+    </div>
+    <div>
+      <h2>Tipos de datos</h2>
+      <p>
+        Tal y cómo hemos dicho en el anterior apartado. Un fichero JSON es una representación sencilla de un objeto. Está estructurado en propiedades y valores. Las propiedades pueden tener cómo valor cadenas de caracteres, números, colección de datos, colección de objetos y valores booleanos.
+      </p>
+      <ol>
+        <li><strong>string:</strong> Este tipo de variable acepta cadenas de caracteres.</li>
+        <li><strong>numérica:</strong> Acepta todo tipo de números ( Integer, Double, Float, etc. ).</li>
+        <li><strong>booleanos:</strong> Acepta dos valores true o false.</li>
+        <li>
+          <strong>Colección de datos:</strong>
+          <ul>
+            <li>Acepta una colección de valores.</li>
+            <li>Acepta una colección de objetos con sus propiedades.</li>
+          </ul>
+        </li>
+      </ol>
+      <video controls>
+        <source src="media/tuto01.mp4" type="video/mp4">
+      </video>
+    </div>
+  </main>
 </body>
 </html>
