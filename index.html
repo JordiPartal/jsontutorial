@@ -39,6 +39,17 @@
         <source src="media/tuto01.mp4" type="video/mp4">
       </video>
     </div>
+    <div>
+      <h2>Acceso al JSON</h2>
+      <p>
+        Para acceder a sus propiedades, desde JavaScript tenemos que usar la función <strong>fetch()</strong>. Esta función devuelve una promesa. Es decir, devuelve un resultado, independientemente de lo que sea. Para poder recuperar la información almacenada en el fichero JSON, esta función nos reclamará la ruta dónde se encuentra el fichero al que vamos a acceder.
+      </p>
+      <img src="img/pic01.png" alt="imagen de código">
+      <p>
+        Si nos fijamos en la anterior captura, dentro del <strong>fetch()</strong> hay una función llamada <strong>rootFile()</strong>. Esta función facilita la carpeta <strong>root</strong> dónde se encuentra los ficheros JSON. Finalmente el nombre del fichero, lo pasaremos cómo parámetro de la función <strong>getData()</strong> y la información del fichero la almacenaremos en una variable.
+      </p>
+      <img src="img/pic02.png" alt="imagen de código">
+    </div>
   </main>
 </body>
 </html>
