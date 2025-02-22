@@ -21,7 +21,6 @@ function getData(file) {
 }
 
 function addABunchOfEmployees(max) {
-
     let collection = [];
     for (let count = 0; count < max; count++) {
         collection[count] = addEmployee(dataset);

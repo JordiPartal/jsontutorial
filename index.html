@@ -4,51 +4,62 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/gralstyle.css"/>
   <script src="//unpkg.com/brain.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="js/builder.js"></script>
   <script src="js/employees.js"></script>
   <title>Title</title>
 </head>
 <body onload="init()">
   <main>
-    <h1>JSON y JavaScript</h1>
-    <div>
-      <h2>Introducción</h2>
-      <p>
-        En este sitio web, hablaremos de los fichero de tipo JSON. El acrónimo de JSON (JavaScript Object Notation), a grandes rasgos, es un formato de texto sencillo y ligero que nos permite intercambiar datos de manera más eficaz. Este tipo de ficheros, de manera vulgar se considera que son una array, pero eso es una blasfemia. <strong>Los ficheros JSON son una representación sencilla de lo que entendemos cómo un objeto</strong>. Además, no pesa demasiado y carece de claves primarias y foráneas.
-      </p>
+    <div class="section">
+      <h1>JSON y JavaScript</h1>
+      <div>
+        <h2>Introducción</h2>
+        <p>
+          En este sitio web, hablaremos de los ficheros de tipo JSON. El acrónimo de JSON (JavaScript Object Notation), a grandes rasgos, es un formato de texto sencillo y ligero que nos permite intercambiar datos de manera más eficaz. Este tipo de ficheros, de manera vulgar se considera que son una array, pero eso es una blasfemia. <strong>Los ficheros JSON son una representación sencilla de lo que entendemos cómo un objeto</strong>. Además, no pesa demasiado y carece de claves primarias y foráneas.
+        </p>
+      </div>
+      <div>
+        <h2>Tipos de datos</h2>
+        <p>
+          Tal y como hemos dicho en el anterior apartado. Un fichero JSON es una representación sencilla de un objeto. Está estructurado en propiedades y valores. Las propiedades pueden tener cómo valor cadenas de caracteres, números, colección de datos, colección de objetos y valores booleanos.
+        </p>
+        <ol>
+          <li><strong>string:</strong> Este tipo de variable acepta cadenas de caracteres.</li>
+          <li><strong>numérica:</strong> Acepta todo tipo de números ( Integer, Double, Float, etc. ).</li>
+          <li><strong>booleanos:</strong> Acepta dos valores true o false.</li>
+          <li>
+            <strong>Colección de datos:</strong>
+            <ul>
+              <li>Acepta una colección de valores.</li>
+              <li>Acepta una colección de objetos con sus propiedades.</li>
+            </ul>
+          </li>
+        </ol>
+        <video controls>
+          <source src="media/tuto01.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
-    <div>
-      <h2>Tipos de datos</h2>
-      <p>
-        Tal y cómo hemos dicho en el anterior apartado. Un fichero JSON es una representación sencilla de un objeto. Está estructurado en propiedades y valores. Las propiedades pueden tener cómo valor cadenas de caracteres, números, colección de datos, colección de objetos y valores booleanos.
-      </p>
-      <ol>
-        <li><strong>string:</strong> Este tipo de variable acepta cadenas de caracteres.</li>
-        <li><strong>numérica:</strong> Acepta todo tipo de números ( Integer, Double, Float, etc. ).</li>
-        <li><strong>booleanos:</strong> Acepta dos valores true o false.</li>
-        <li>
-          <strong>Colección de datos:</strong>
-          <ul>
-            <li>Acepta una colección de valores.</li>
-            <li>Acepta una colección de objetos con sus propiedades.</li>
-          </ul>
-        </li>
-      </ol>
-      <video controls>
-        <source src="media/tuto01.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div>
-      <h2>Acceso al JSON</h2>
-      <p>
-        Para acceder a sus propiedades, desde JavaScript tenemos que usar la función <strong>fetch()</strong>. Esta función devuelve una promesa. Es decir, devuelve un resultado, independientemente de lo que sea. Para poder recuperar la información almacenada en el fichero JSON, esta función nos reclamará la ruta dónde se encuentra el fichero al que vamos a acceder.
-      </p>
-      <img src="img/pic01.png" alt="imagen de código">
-      <p>
-        Si nos fijamos en la anterior captura, dentro del <strong>fetch()</strong> hay una función llamada <strong>rootFile()</strong>. Esta función facilita la carpeta <strong>root</strong> dónde se encuentra los ficheros JSON. Finalmente el nombre del fichero, lo pasaremos cómo parámetro de la función <strong>getData()</strong> y la información del fichero la almacenaremos en una variable.
-      </p>
-      <img src="img/pic02.png" alt="imagen de código">
+    <div class="section">
+      <h1>Manipulación de los ficheros JSON</h1>
+      <div>
+        <h2>Lectura de un fichero</h2>
+        <p>
+          Para acceder a sus propiedades, desde JavaScript tenemos que usar la función <strong>fetch()</strong>. Esta función devuelve una promesa. Es decir, devuelve un resultado, independientemente de lo que sea. Para poder recuperar la información almacenada en el fichero JSON, esta función nos reclamará la ruta dónde se encuentra el fichero al que vamos a acceder.
+        </p>
+        <img src="img/pic01.png" alt="imagen de código">
+        <p>
+          Si nos fijamos en la anterior captura, dentro del <strong>fetch()</strong> hay una función llamada <strong>rootFile()</strong>. Esta función facilita la carpeta <strong>root</strong> dónde se encuentra los ficheros JSON. Finalmente, el nombre del fichero, lo pasaremos cómo parámetro de la función <strong>getData()</strong> y la información del fichero la almacenaremos en una variable.
+        </p>
+        <img src="img/pic02.png" alt="imagen de código">
+      </div>
+      <div>
+        <h2>Acceso a las propiedades</h2>
+        <p>
+          Sabemos que, un <strong>JSON</strong>, es una representación sencilla de lo que entendemos cómo una clase. Para acceder a sus propiedades, tendremos que escribir el nombre de la clase, seguido de un punto, y escribir la propiedad a la que queremos acceder. En el rectángulo que hay en la captura que hemos hecho más abajo, podemos ver cómo accedemos a la propiedad <strong>primero</strong>. En este caso, estamos accediendo a un objeto llamado <strong>apellido</strong>, y dentro de este objeto, accedemos a una propiedad llamada <strong>primero</strong>. Podemos hacer esto, porque cómo hemos dicho antes, en un fichero <strong>JSON</strong>, podemos guardad colecciones de datos u objetos. En este caso, <strong>apellido</strong> es un objeto.
+        </p>
+        <img src="img/pic03.png" alt="imagen de código">
+      </div>
     </div>
   </main>
 </body>
