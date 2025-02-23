@@ -25,6 +25,11 @@ main {
         border: grey;
         border-radius: 5px;
 
+        .important {
+            color: black;
+            background-color: yellow;
+        }
+
         h1 {
             font-size: 2.5em;
             text-align: center;
@@ -46,12 +51,17 @@ main {
                 margin: 0;
             }
 
+            p:first-letter {
+                margin-left: 64px;
+            }
+
             video, img {
                 display: block;
                 align-self: center;
                 margin: 32px auto;
                 width: 85%;
                 box-shadow: lightgray 5px 5px 10px;
+                border: var(--color-gral) 2px solid;
             }
         }
 

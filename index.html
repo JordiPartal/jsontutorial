@@ -45,13 +45,16 @@
       <div>
         <h2>Lectura de un fichero</h2>
         <p>
-          Para acceder a sus propiedades, desde JavaScript tenemos que usar la función <strong>fetch()</strong>. Esta función devuelve una promesa. Es decir, devuelve un resultado, independientemente de lo que sea. Para poder recuperar la información almacenada en el fichero JSON, esta función nos reclamará la ruta dónde se encuentra el fichero al que vamos a acceder.
+          Para poder leer un fichero de tipo <strong>JSON</strong> desde JavaScript, tenemos que usar la función <strong>fetch()</strong>. Esta función devuelve una promesa. Es decir, nos devolverá un resultado. Si queremos recuperar la información del fichero <strong>JSON</strong>, tendremos que facilitar a <strong>fetch()</strong> la ruta dónde ha de encontrar el fichero al que queremos acceder.
         </p>
         <img src="img/pic01.png" alt="imagen de código">
         <p>
           Si nos fijamos en la anterior captura, dentro del <strong>fetch()</strong> hay una función llamada <strong>rootFile()</strong>. Esta función facilita la carpeta <strong>root</strong> dónde se encuentra los ficheros JSON. Finalmente, el nombre del fichero, lo pasaremos cómo parámetro de la función <strong>getData()</strong> y la información del fichero la almacenaremos en una variable.
         </p>
         <img src="img/pic02.png" alt="imagen de código">
+        <video controls>
+          <source src="media/tuto02.mp4" type="video/mp4">
+        </video>
       </div>
       <div>
         <h2>Acceso a las propiedades</h2>
@@ -59,6 +62,16 @@
           Sabemos que, un <strong>JSON</strong>, es una representación sencilla de lo que entendemos cómo una clase. Para acceder a sus propiedades, tendremos que escribir el nombre de la clase, seguido de un punto, y escribir la propiedad a la que queremos acceder. En el rectángulo que hay en la captura que hemos hecho más abajo, podemos ver cómo accedemos a la propiedad <strong>primero</strong>. En este caso, estamos accediendo a un objeto llamado <strong>apellido</strong>, y dentro de este objeto, accedemos a una propiedad llamada <strong>primero</strong>. Podemos hacer esto, porque cómo hemos dicho antes, en un fichero <strong>JSON</strong>, podemos guardad colecciones de datos u objetos. En este caso, <strong>apellido</strong> es un objeto.
         </p>
         <img src="img/pic03.png" alt="imagen de código">
+        <h2>Almacenar la información</h2>
+        <p>
+          Para almacenar la información de un fichero <strong>JSON</strong> en una variable, tenemos que crear una clase que tenga la misma estructura que este fichero. En el primer video, vimos que la clase de empleado estaba formada por 5 propiedades (id, nombre, apellidos, edad y su soltería). La propiedad de <strong>apellido</strong>, es un objeto formado por 2 propiedades (primer apellido y segundo), el resto son propiedades sencillas. Para replicarlo, crearemos una clase principal y dos secundarias. La de <strong>surnames</strong> y <strong>employee</strong>. La 1a clase almacenará los apellidos y la 2a el resto de información del trabajador.
+        </p>
+        <img src="img/pic04.png" alt="imagen de código">
+        <img src="img/pic05.png" alt="imagen de código">
+        <p>
+          Una vez tenemos definida la clase, crearemos su constructor. Sí nos fijamos en las dos capturas anteriores, cada propiedad tiene cómo valor <strong>'null'</strong>. Para otorgarle un valor a cada propiedad, aparte de llamar al constructor, será necesario crear métodos que definan este valor. En la siguiente captura de pantalla podemos ver que hay dos métodos: <strong >setSurname()</strong> y <strong>setLastName()</strong>. Estos métodos, sirven para dar un valor a la propiedad: <strong>surname</strong> y <strong>lastname</strong> de la clase <strong>Surnames</strong>. Cada clase, aparte de tener métodos que definen valores a las propiedades, <strong class="important">SIEMPRE</strong> tendrán un método llamado <strong>build()</strong>.
+        </p>
+        <img src="img/pic06.png" alt="imagen de código">
       </div>
     </div>
   </main>

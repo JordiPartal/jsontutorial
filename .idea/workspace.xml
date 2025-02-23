@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c0511d-d180-4d40-a6c4-426703819bd9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img/pic03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/pic04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/pic05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/pic06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/tuto02.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/gralstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/gralstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/builder.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/builder.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,27 +42,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Node.js.builder.js.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "javascript.nodejs.core.library.configured.version": "20.9.0",
-    "javascript.nodejs.core.library.typings.version": "20.9.5",
-    "last_opened_file_path": "G:/DAW/DriverJS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "JavaScript.Libraries",
-    "ts.external.directory.path": "E:\\PhpStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Node.js.builder.js.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.9.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.9.5&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/DAW/JsonTutorial/media&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;JavaScript.Libraries&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\PhpStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\DAW\JsonTutorial\media" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\DAW\JsonTutorial\media" />
     </key>
@@ -89,7 +94,10 @@
       <workItem from="1739697486286" duration="8431000" />
       <workItem from="1739715044470" duration="13108000" />
       <workItem from="1740086960617" duration="510000" />
-      <workItem from="1740214849392" duration="9073000" />
+      <workItem from="1740214849392" duration="9685000" />
+      <workItem from="1740240068188" duration="5194000" />
+      <workItem from="1740246868311" duration="1069000" />
+      <workItem from="1740306272836" duration="3111000" />
     </task>
     <servers />
   </component>
