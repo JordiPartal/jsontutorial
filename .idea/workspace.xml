@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2c0511d-d180-4d40-a6c4-426703819bd9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/media/tuto03.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +48,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "javascript.nodejs.core.library.configured.version": "20.9.0",
     "javascript.nodejs.core.library.typings.version": "20.9.5",
-    "last_opened_file_path": "G:/DAW/JsonTutorial",
+    "last_opened_file_path": "G:/DAW/JsonTutorial/media",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -94,6 +96,9 @@
       <workItem from="1740246868311" duration="1069000" />
       <workItem from="1740306272836" duration="3111000" />
       <workItem from="1740318273304" duration="744000" />
+      <workItem from="1740828361546" duration="9000" />
+      <workItem from="1740828382018" duration="35000" />
+      <workItem from="1740828806220" duration="3833000" />
     </task>
     <servers />
   </component>

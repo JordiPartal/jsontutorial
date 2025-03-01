@@ -15,7 +15,7 @@
       <div>
         <h2>Introducción</h2>
         <p>
-          En este sitio web, hablaremos de los ficheros de tipo JSON. El acrónimo de JSON (JavaScript Object Notation), a grandes rasgos, es un formato de texto sencillo y ligero que nos permite intercambiar datos de manera más eficaz. Este tipo de ficheros, de manera vulgar se considera que son una array, pero eso es una blasfemia. <strong>Los ficheros JSON son una representación sencilla de lo que entendemos cómo un objeto</strong>. Además, no pesa demasiado y carece de claves primarias y foráneas.
+          En este sitio web, hablaremos de los ficheros de tipo JSON. Este acrónimo (JavaScript Object Notation), a grandes rasgos, es un fichero de texto plano que nos permite intercambiar datos. Vulgarmente los clasifican cómo <em lang="en-us">arrays</em>, pero no es correcto, de hecho, <strong>son una representación sencilla de lo que entendemos cómo un objeto</strong>. Además, pesa poco, y por este motivo, es fácil de gestionar e intercambiar.
         </p>
       </div>
       <div>
@@ -59,19 +59,22 @@
       <div>
         <h2>Acceso a las propiedades</h2>
         <p>
-          Sabemos que, un <strong>JSON</strong>, es una representación sencilla de lo que entendemos cómo una clase. Para acceder a sus propiedades, tendremos que escribir el nombre de la clase, seguido de un punto, y escribir la propiedad a la que queremos acceder. En el rectángulo que hay en la captura que hemos hecho más abajo, podemos ver cómo accedemos a la propiedad <strong>primero</strong>. En este caso, estamos accediendo a un objeto llamado <strong>apellido</strong>, y dentro de este objeto, accedemos a una propiedad llamada <strong>primero</strong>. Podemos hacer esto, porque cómo hemos dicho antes, en un fichero <strong>JSON</strong>, podemos guardad colecciones de datos u objetos. En este caso, <strong>apellido</strong> es un objeto.
+          Sabemos que, un <strong>JSON</strong>, es una representación sencilla de lo que entendemos cómo una clase. Para acceder a sus propiedades, tendremos que escribir el nombre de la clase, seguido de un punto y, por consiguiente escribir la propiedad a la que queremos acceder. En el rectángulo que hay en la captura, podemos ver cómo accedemos a la propiedad <strong>primero</strong>. En este caso, estamos accediendo a un objeto llamado <strong>apellido</strong>, y dentro de este objeto, accedemos a una propiedad llamada <strong>primero</strong>.
         </p>
         <img src="img/pic03.png" alt="imagen de código">
         <h2>Almacenar la información</h2>
         <p>
-          Para almacenar la información de un fichero <strong>JSON</strong> en una variable, tenemos que crear una clase que tenga la misma estructura que este fichero. En el primer video, vimos que la clase de empleado estaba formada por 5 propiedades (id, nombre, apellidos, edad y su soltería). La propiedad de <strong>apellido</strong>, es un objeto formado por 2 propiedades (primer apellido y segundo), el resto son propiedades sencillas. Para replicarlo, crearemos una clase principal y dos secundarias. La de <strong>surnames</strong> y <strong>employee</strong>. La 1a clase almacenará los apellidos y la 2a el resto de información del trabajador.
+          Para almacenar la información en una variable, tenemos que crear una clase con la misma estructura que tiene el fichero de dónde sacaremos la información. Para ello, crearemos una clase principal y dos secundarias (surnames y employee). <strong>Surnames</strong>, almacenará los apellidos. <strong>Employee</strong> la información básica del trabajador.
         </p>
         <img src="img/pic04.png" alt="imagen de código">
         <img src="img/pic05.png" alt="imagen de código">
         <p>
-          Una vez tenemos definida la clase, crearemos su constructor. Sí nos fijamos en las dos capturas anteriores, cada propiedad tiene cómo valor <strong>'null'</strong>. Para otorgarle un valor a cada propiedad, aparte de llamar al constructor, será necesario crear métodos que definan este valor. En la siguiente captura de pantalla podemos ver que hay dos métodos: <strong >setSurname()</strong> y <strong>setLastName()</strong>. Estos métodos, sirven para dar un valor a la propiedad: <strong>surname</strong> y <strong>lastname</strong> de la clase <strong>Surnames</strong>. Cada clase, aparte de tener métodos que definen valores a las propiedades, <strong class="important">SIEMPRE</strong> tendrán un método llamado <strong>build()</strong>.
+          Una vez tenemos definida la clase, crearemos su constructor. Las propiedades estarán inicializadas con valor <strong>'null'</strong>, ya que a posteriori les daremos un valor a través de él. Dentro, hay 2 métodos: <strong>setSurname()</strong> y <strong>setLastName()</strong>. Estos métodos, los usaremos para dar valor a las propiedades. Además, cada constructor, <strong class="important">SIEMPRE</strong> tendrá un método llamado <strong>build()</strong> que se encargará de generar la clase con los campos que hemos decidido darles algún valor.
         </p>
         <img src="img/pic06.png" alt="imagen de código">
+        <video controls>
+          <source src="media/tuto03.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
   </main>
